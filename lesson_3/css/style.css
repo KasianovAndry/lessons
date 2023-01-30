@@ -1,0 +1,48 @@
+/* @import url("reset.css"); */
+
+h1.title {
+    color: red;
+}
+.basic {
+    color: gray;
+}
+span.link {
+    color: blue;
+}
+.navigation {
+    color: green;
+}
+
+h2.title{
+    color: firebrick;
+}
+
+.review {
+    color: gray;
+}
+
+h3.title{
+    color: yellow;
+}
+
+.advantages {
+    color: firebrick;
+}
+.syntax {
+    color: red;
+}
+.example {
+    color: black;
+}
+
+span.blue{
+    color: blue;
+}
+
+span.green{
+    color: green;
+}
+
+span.red {
+    color: red;
+}
