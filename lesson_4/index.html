@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 4</title>
+</head>
+<body>
+    <h1 class="title">Front end та back end</h1>
+    <div class="main">
+        <p>Матеріал з Вікіпедії — вільної енциклопедії.</p>
+        <p>
+            В <span class="link">програмній інженерії</span> терміни «<span class="bold">front end</span>» та «<span class="bold">back end</span>» розрізняють 
+            за принципом розділення відповідальності між <span class="link">рівнем представлення</span> та 
+            рівнем доступу до даних відповідно.
+        </p>
+        <p>
+            Front end — це  <span class="link">інтерфейс</span> для взаємодії між користувачем і back end. 
+            Front end та back end можуть бути розподілені між однією або кількома системами.
+        </p>
+        <p>
+            В <span class="link">програмній архітектурі</span> може бути багато рівнів між 
+            <span class="link">апаратним забезпеченням</span> та <span class="link">кінцевим користувачем</span>. Кожен з цих рівнів може мати 
+            як front end, так і back end. Front — це абстракція, спрощення базового 
+            компоненту через надання користувачу зручного (<span class="link">user-friendly</span>) <span class="link">інтерфейсу</span>.
+        </p>
+        <p>
+            В <span class="link">проектуванні програмного забезпечення</span>, наприклад, архітектура 
+            <span class="link">Модель-Вид-Контролер</span> надає front end та back end для <span class="link">бази даних</span>, 
+            компонентів обробки користувачів і даних. Розділення програмних 
+            систем на front end та back end спрощує розробку і розділяє підтримку. 
+            <span class="link">Емпіричне правило</span> полягає в тому, що front (чи <span class="link">«клієнтська»</span>) сторона — 
+            це будь-який компонент, яким керує користувач. Код серверної сторони 
+            (чи «back end»-у) знаходиться на <span class="link">сервері</span>. Плутанина виникає, коли хтось 
+            повинен зробити front-end зміни файлів на боці серверу. Більшість 
+            HTML-дизайнерів, наприклад, не повинні бути на сервері під час розробки 
+            HTML; і навпаки, серверні інженери, за визначенням, не повинні бути ніде 
+            окрім серверу. Потрібні обидва розробники, щоб в кінцевому результаті 
+            створити функціональний, інтерактивний вебсайт.
+        </p>
+        <p>
+            Для більшості комп'ютерних підсистем, графічні <span class="link">файлові менеджери</span> є 
+            «front end»-ом для комп'ютерних <span class="link">файлових систем</span>, і <span class="link">оболонкою</span> для 
+            <span class="link">операційної системи</span>. Користувач діє від імені «front end»-у, а back 
+            end запускає програми операційної системи у відповідь.
+        </p>
+        <p>
+            Використання <span class="link">інтерфейсу командного рядка</span> (CLI) потребує знання 
+            спеціальної термінології і памʼятання команд, а 
+            <span class="link">графічний інтерфейс користувача</span> (GUI) виступає замість нього «front end»-ом як 
+            <span class="link">стільничне середовище</span>. В <span class="link">Unix</span>-середовищі, <span class="link">ncurses</span> — це простий 
+            псевдографічний front end для <span class="link">інтерфейсу командного рядка</span>. На 
+            рівні <span class="link">інтерфейсу командного рядка Unix</span> найбільше байтових 
+            потоко-орієнтованих (тобто таких, що використовують 
+            stdin/stdout/stderr як інтерфейс) програм діють як <span class="link">фільтри</span> — 
+            автономні програми, які також можуть слугувати «front end»-ами і 
+            «back end»-ами для інших програм. (Вони функціонують завдяки 
+            передачі даних між собою через <span aria-checked="link">конвеєр</span>, в основному для обробки 
+            тексту; наприклад: <span class="example">$ grep word ~user/dir/infile | sort | tee ~user/dir/outfile</span>)
+        </p>
+        <p>
+            В <span class="link">компʼютерній мережі</span> front end може належати до будь-якого 
+            апаратного забезпечення, що оптимізує чи захищає мережевий трафік. 
+            Така річ називається <span class="link">апаратним front end додатком</span>, бо вона 
+            знаходиться перед зовнішньою мережею чи на її межі. Мережевий трафік 
+            проходить через апаратний front end перед входом до мережі.
+        </p>
+        <p>
+            В <span class="link">системах керування вмістом</span> (<span class="link">CMS</span>) терміни front end та back end 
+            можуть належати до тієї частини CMS, яка відображається кінцевому 
+            користувачу і до адміністративної частини відповідно.
+        </p>
+        <p>
+            В <span class="link">компіляторах</span> front end транслює компʼютерний програмний 
+            <span class="link">початковий код</span> в проміжне представлення, а back end працює з 
+            проміжним представленням, щоб генерувати <span class="link">машинний код</span>. Back end 
+            зазвичай оптимізований для генерації коду, який працює швидше. 
+            Front-end/back-end відмінності можуть розділитись на <span class="link">парсерну</span> 
+            частину і back end, який <span class="link">генерує</span> і <span class="link">оптимізує код</span>. Деякі проекти, 
+            такі як <span class="link">GCC</span>, надають вибір між кількома «front end»-ами 
+            (синтаксичний аналіз різних початкових мов) чи «back end»-ами 
+            (генерація коду для процесорів різного призначання).
+        </p>
+        <p>
+            В <span class="link">синтезі мовлення</span>, front end належить до частини системи синтезу, 
+            яка конвертує вхідний текст у символьно-фонетичний образ, а 
+            back end конвертує <span class="link">символьно-фонетичний</span> образ безпосередньо в звуки.
+        </p>
+        <p>
+            В контексті <spaqn class="link">WWW</spaqn>-програм, посередник — це сервіс, який функціонує 
+            одночасно як сервер на «front end»-і та як клієнт на «back end»-і.
+        </p>
+    </div>
+    <div class="on-the-side">
+        <h2 class="title">Див. також</h2>
+        <ul class="list">
+            <li><span class="link">Верстка вебсторінок</span></li>
+            <li><span class="link">Клієнт-серверна архітектура</span></li>
+            <li><span class="link">Архітектура програмного забезпечення</span></li>
+            <li>Out-of-box experience</li>
+        </ul>
+    </div>
+    <div class="source">
+        <h2 class="title">Джерела</h2>
+        <ol class="list">
+            <li>
+                Ka-Ping, Yee. <span class="link">Definition of a Mediator</span> (англ.). Архів <span class="link">оригіналу</span> за 26 січня 2016. Процитовано 9 січня 2016. «In the context of WWW applications, a mediator is a service that functions simultaneously as a server on its front end and as a client on its back end.»
+            </li>
+        </ol>
+    </div>
+    <p class="disclaimer">
+        уся інформація взята з вікіпедії
+    </p>
+</body>
+</html>
