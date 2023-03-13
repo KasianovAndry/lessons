@@ -1,0 +1,324 @@
+@import url("reset.css");
+
+.container {
+	perspective: 1000px;
+	padding-bottom: 300px;
+}
+.container > *:not(:last-child) {
+	margin-bottom: 100px;
+}
+@keyframes some {
+	0% {
+		transform: rotate(0deg);
+	}
+	45% {
+		transform: rotate(180deg);
+	}
+	55% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+.block {
+	background-color: yellowgreen;
+	color: #fff;
+	margin: 0 auto;
+	width: 200px;
+	height: 200px;
+	animation-name: some;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+
+}
+@keyframes open-door-left {
+	0% {
+
+	}
+	50% {
+		transform: skew(-20deg)
+	}
+	100% {
+		transform: skew(-20deg)  translate(-50px, 0);
+	}
+}
+@keyframes open-door-right {
+	0% {
+
+	}
+	50% {
+		transform: skew(20deg)
+	}
+	100% {
+		transform: skew(20deg)  translate(50px, 0);
+	}
+}
+.block-door {
+	background-color: yellowgreen;
+	width: 300px;
+	height: 200px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	
+}
+.block-door::before {
+	content: "";
+	width: 150px;
+	height: 200px;
+	background-color: red;
+	position: absolute;
+	transform-origin: right top;
+	top: 0;
+	left: 0;
+	transition: transform 1s;
+}
+.block-door::after {
+	content: "";
+	width: 150px;
+	height: 200px;
+	background-color: red;
+	position: absolute;
+	transform-origin: left top;
+	top: 0;
+	right: 0;
+	transition: transform 1s;	
+}
+.block-door:hover::before {
+	animation: open-door-left 2s 2 alternate forwards;
+}
+.block-door:hover::after {
+	animation: open-door-right 2s 2 alternate forwards;
+}
+
+
+.list {
+	height: 400px;
+	width: 200px;
+	position: relative;
+	perspective: 1000px;
+}
+.list__door {
+	background-color: red;
+	position: relative;
+	height: 400px;
+	width: 200px;
+	transform-origin: left;
+	z-index: 1;
+	transition: transform 0.3s 1s;
+	vertical-align: middle;
+}
+.list:hover {
+	width: 100%;
+}
+.list:hover .list__door {
+	transform: rotate3d(0, 1, 0, -20deg);
+	transition: transform 0.3s;
+}
+.list:hover .list__items {
+	visibility: visible;
+	opacity: 1;
+	transform: translate(0, 0);
+}
+.list__items {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1160px;
+	background-color: #bbb;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 0;
+	padding-left: 200px;
+	font-size: 0;
+	transition: all 2s;
+	transform: translate(-100%, 0);
+	vertical-align: middle;
+}
+.list__items  > *:not(:last-child) {
+	margin-right: 30px;
+}
+.list__item {
+	background-color: gray;
+	height: 400px;
+	width: 300px;
+	display: inline-block;
+	font-size: 16px;
+}
+
+
+.scene {
+	padding: 200px 0;
+	position: relative;
+	height: 500px;
+	perspective: 1000px;
+	overflow: hidden;
+}
+.roof {
+	background-color: #aaa;
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.floor-1 {
+	background-color: #aaa;
+	width: 600px;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.grey-block {
+	background-color: #aaa;
+	width: 30px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 1500px;
+}
+.floor-2 {
+	background-color: #aaa;
+	width: 200px;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.portal-in,
+.portal-out {
+	position: absolute;
+	width: 300px;
+	height: 40px;
+	border-radius: 300px;
+	background-color: black;
+}
+.portal-in {
+	bottom: 0;
+	left: 610px;
+	transform-origin: bottom;
+	transform: rotate3d(1, 0, 0, 80deg);
+}
+.portal-out {
+	left: 1200px;
+	top: 30px;
+	transform-origin: top;
+	transform: rotate3d(1, 0, 0, -80deg);
+}
+@keyframes car-driving {
+	15%{
+		transform: translate(300px, 0);
+	}
+	25%{
+		transform: translate(460px, -50px) rotate(10deg);
+	}
+	28%{
+		transform: translate(500px, -60px) rotate(25deg);
+	}
+	31%{
+		transform: translate(580px, -40px) rotate(45deg);
+	}
+	34%{
+		transform: translate(620px, -10px) rotate(55deg);
+	}
+	38%{
+		transform: translate(630px, 20px) rotate(58deg);
+	}
+	40%{
+		transform: translate(630px, 100px) rotate(60deg);
+	}
+	42%{
+		transform: translate(630px, 300px) rotate(55deg);
+	}
+	43%{
+		transform: translate(1220px, -400px) rotate(55deg);
+	}
+	48%{
+		transform: translate(1220px, -320px) rotate(-25deg);
+	}
+	53%{
+		transform: translate(1220px, -250px) rotate(-35deg);
+	}
+	55%{
+		transform: translate(1230px, -200px) rotate(-40deg);
+	}
+	60%{
+		transform: translate(1300px, -170px) rotate(-75deg);
+	}
+	64%{
+		transform: translate(1400px, -120px) rotate(-100deg);
+	}
+	67%{
+		transform: translate(1480px, -100px) rotate(-150deg);
+	}
+	71%{
+		transform: translate(1550px, -45px) rotate(-230deg);
+	}
+	73%{
+		transform: translate(1590px, -35px) rotate(-310deg);
+	}
+	81%{
+		transform: translate(1650px, -15px) rotate(-360deg);
+	}
+	84%{
+		transform: translate(1700px, 0px) rotate(-360deg);
+	}
+	100%{
+		transform: translate(1700px, 0px) rotate(-360deg);
+	}
+}
+@keyframes wheel-hand {
+	30%{
+		transform: translate(70px, -10px);
+	}
+	70%{
+		transform: translate(70px, -10px);
+	}
+}
+@keyframes wheels-rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes wheels-jump {
+	50% {
+		transform: translate(-10px, 40px);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+.car {
+	position: absolute;
+	bottom: 70px;
+	left: 0;
+	animation: car-driving 10s linear forwards;
+	z-index: -1;
+}
+.car__body {
+	background: darkred;
+	width: 250px;
+	height: 150px;
+	border-radius: 30px;
+	position: relative;
+}
+.car-wheel {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: black;
+	position: absolute;
+	bottom: -40px;
+	border: 6px dashed grey;
+}
+.car-wheel--left {
+	left: 10px;
+	animation: wheels-rotate 1.5s, wheels-jump 0.8s 1.5s forwards;
+}
+.car-wheel--right {
+	right: 10px;
+	animation: wheels-rotate 1.5s, wheels-jump 0.8s 1.5s forwards,
+	wheel-hand  1s 5.3s;
+}
