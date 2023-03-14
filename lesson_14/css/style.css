@@ -1,0 +1,117 @@
+@import url("reset.css");
+
+img {
+	max-width: 100%;
+}
+body {
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	color: #495057;
+	font-size: 12px;
+	line-height: 1.7;
+	font-weight: 500;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+.page {
+	background-color: #F8F9FA;
+	padding: 100px 0;
+}
+.page__container {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.page__navigation-panel {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	line-height: 2;
+	padding-bottom: 45px;
+}
+.page__list > *:not(:last-child){
+	margin-right: 20px;
+}
+.page__link {
+	color: rgba(73, 80, 87, 0.5);
+}
+.page__link:not(.page__link--active):hover {
+	text-decoration: underline;
+}
+.page__link--active {
+	color: #495057;
+	cursor: default;
+}
+.page__items {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+	row-gap: 45px;
+}
+.page__item {
+	flex-shrink: 0;
+	flex-grow: 0;
+	flex-basis: 33.333333%;
+	padding: 0 15px;
+}
+.item__image {
+	position: relative;
+	margin-bottom: 30px;
+}
+.item__categoria-link {
+	color: #F8F9FA;
+	display: inline-block;
+	font-weight: 700;
+	font-size: 8px;
+	line-height: 20px;
+	min-height: 25px;
+	padding: 3px 12px;
+	text-transform: uppercase;
+	background: rgba(33, 37, 41, 0.3);
+	border-radius: 3px;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	max-width: 150px;
+	transition: transform 0.2s;
+	text-align: center;
+}
+.item__categoria-link:hover {
+	transform: scale(1.06);
+}
+.item__text__box {
+	font-weight: 300;
+}
+.item__text__box > *:not(:last-child){
+	margin-bottom: 15px;
+}
+.item__text__box img {
+	width: 100px;
+}
+.item__link {
+	color: #212529;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+	display: inline-block;
+}
+.page__button-box {
+	padding-top: 60px;
+	display: flex;
+	justify-content: center;
+}
+.page__button {
+	color: #F8F9FA;
+	background: #212529;
+	border-radius: 3px;
+	line-height: 2;
+	padding: 8px 50px;
+	max-width: 400px;
+	transition: transform 0.2s;
+}
+.page__button:hover {
+	transform: scale(1.03);
+}
