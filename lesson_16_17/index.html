@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Oswald:wght@400;500&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<title>Lesson 16-17</title>
+</head>
+<body>
+<div class="wrapper">
+	<form class="form" action="#">
+		<input id="age-01" type="text" placeholder="Ім'я користувача" name="username" minlength="10" autocomplete="off" required>
+
+		<label for="age-01" class="form__label">Lorem ipsum dolor sit amet.</label>
+		<input type="email" placeholder="Електронна пошта користувача" name="email" required>
+
+		<input type="hidden" name="hidden" >
+
+		<input required type="email" placeholder="email" name="email">
+
+		<input required type="number" placeholder="number" name="number">
+
+		<input required type="password" placeholder="password" name="password">
+
+		<input type="color" name="color">
+
+		<input type="search" name="search" placeholder="search">
+
+		<input type="date" name="date">
+
+		<input type="checkbox" name="checkbox" id="checkbox-01">
+		<label for="checkbox-01">01</label>
+		<input type="checkbox" name="checkbox" id="checkbox-02" checked>
+		<label for="checkbox-02">02</label>
+
+		<input type="radio" name="radio" id="radio-01" value="01">
+		<label for="radio-01">01</label>
+		<input type="radio" name="radio" id="radio-02" checked value="02">
+		<label for="radio-02">02</label>
+
+		<input type="file" name="file" multiple>
+
+		<textarea name="textarea" id="textarea" cols="30" rows="5">Hello</textarea>
+		<select name="select">
+			<option value="1">01</option>
+			<option value="2">02</option>
+			<option value="3" selected>03</option>
+			<option value="4">04</option>
+		</select>
+		<p><button type="reset">Reset</button></p>
+		<button type="submit">Submit</button>
+	</form>
+	<form action="https://jsonplaceholder.typicode.com/posts" class="test-form" method="POST">
+		<div class="test-form__line">
+			<input type="text" class="user-name" name="username" required autocomplete="off" placeholder="Name">
+		</div>
+		<div class="test-form__line">
+			<input type="email" class="user-email" name="email" required placeholder="Email">
+		</div>
+		<div class="test-form__line">
+			<input type="password" class="user-password" name="userpassword" required autocomplete="off" placeholder="Password">
+		</div>
+		<div class="test-form__radio radio">
+			<div class="radio__item">
+				<input type="radio" name="radio" id="test-form__radio-01" value="01" class="radio__input">
+				<label for="test-form__radio-01" class="radio__label">01</label>
+			</div>
+			<div class="radio__item">
+				<input type="radio" name="radio" id="test-form__radio-02" value="02" class="radio__input" checked>
+				<label for="test-form__radio-02" class="radio__label">02</label>
+			</div>
+		</div>
+		<div class="test-form__line">
+			<div class="test-form__checkbox checkbox">
+				<input type="checkbox" class="checkbox__input" name="checkbox" id="test-form__checkbox" value="yes">
+				<label for="test-form__checkbox" class="checkbox__label">Checkbox</label>
+			</div>
+		</div>
+		<div class="test-form__line">
+			<button class="test-form__button" type="submit">SUBMIT</button>
+		</div>
+	</form>
+	<div class="media-test">
+		<div class="media-test__container">
+			<div class="media-test__column">
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, laudantium, praesentium adipisci officia unde corrupti, perferendis architecto quas ad eos vitae libero enim harum odio sit, recusandae? Nemo adipisci, corrupti. 
+		    </div>
+			<div class="media-test__column">
+				Excepturi, amet obcaecati deleniti mollitia a? Perspiciatis, doloremque quasi eaque libero nam consequatur quis, tenetur? Perspiciatis obcaecati rem eius reprehenderit, voluptatem veritatis, odio ipsum tempore? Sequi a dolorum itaque voluptatem! 
+			</div>
+			<div class="media-test__column">
+				Asperiores dolorem, similique fugiat nihil ipsum ab sed iure omnis sint commodi reprehenderit nostrum accusantium ea laboriosam qui facilis, facere tempore adipisci modi pariatur, deserunt quisquam! Deleniti possimus, magni distinctio. 
+			</div>
+		</div>
+	</div>
+	<div class="jobs-page">
+		<div class="jobs-page__container">
+			<h2 class="jobs-page__title">
+				ACHIEVEMENT
+			</h2>
+			<div class="jobs-page__items">
+				<div class="jobs-page__item">
+					<div class="jobs-page__image">
+						<img src="img/jobs-1.webp" alt="Кімната">
+					</div>
+					<div class="jobs-page__fourth-title-text-box fourth-title-text-box">
+						<h4 class="fourth-title-text-box__title">
+							Interior design
+						</h4>
+						<p>
+							Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.
+						</p>
+					</div>
+				</div>
+				<div class="jobs-page__item">
+					<div class="jobs-page__image">
+						<img src="img/jobs-2.webp" alt="Дві людини за ноутбуком">
+					</div>
+					<div class="jobs-page__fourth-title-text-box fourth-title-text-box">
+						<h4 class="fourth-title-text-box__title">
+							Consultant
+						</h4>
+						<p>
+							Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.
+						</p>
+					</div>
+				</div>
+				<div class="jobs-page__item">
+					<div class="jobs-page__image">
+						<img src="img/jobs-3.webp" alt="Співбесіда">
+					</div>
+					<div class="jobs-page__fourth-title-text-box fourth-title-text-box">
+						<h4 class="fourth-title-text-box__title">
+							construction consultant
+						</h4>
+						<p>
+							Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="minimalist-page">
+		<div class="minimalist-page__container">
+			<div class="minimalist-page__title-text-box">
+				<h2 class="minimalist-page__title">
+					Minimalist Room
+				</h2>
+				<p>
+					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+				</p>
+			</div>
+			<div class="minimalist-page__image">
+				<img src="img/minimalist-1.webp" alt="Кімната">
+			</div>
+			<div class="minimalist-page__text-box">
+				<div class="minimalist-page__fourth-title-text-box fourth-title-text-box">
+					<h4 class="fourth-title-text-box__title">
+						Project Overview
+					</h4>
+					<p>
+						Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere. Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere. Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere. 
+					</p>
+					<div class="minimalist-page__date-categoria">
+						<span>July 22 - 2022</span>
+						<span>
+						    Interior Design - Furnitur 
+					    </span>
+					</div>
+				</div>
+				<div class="minimalist-page__fourth-title-text-box fourth-title-text-box">
+					<h4 class="fourth-title-text-box__title">
+						Design Process
+					</h4>
+					<p>
+						Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere. Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.
+					</p>
+					<p>
+						Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere. Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.
+					</p>
+				</div>
+			</div>
+			<div class="minimalist-page__items">
+				<div class="minimalist-page__item">
+					<div class="minimalist-page__photo">
+						<img src="img/minimalist-2.webp" alt="Кімната">
+					</div>
+				</div>
+				<div class="minimalist-page__item">
+					<div class="minimalist-page__photo">
+						<img src="img/minimalist-3.webp" alt="Кімната">
+					</div>
+				</div>
+				<div class="minimalist-page__item minimalist-page__item--big">
+					<div class="minimalist-photo">
+						<img src="img/minimalist-4.webp" alt="Кімната">
+					</div>
+				</div>
+				<div class="minimalist-page__item">
+					<div class="minimalist-page__photo">
+						<img src="img/minimalist-5.webp" alt="Кімната">
+					</div>
+				</div>
+				<div class="minimalist-page__item">
+					<div class="minimalist-page__photo">
+						<img src="img/minimalist-6.webp" alt="Кімната">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="components-form">
+		<div class="components-form__container">
+			<h2 class="components-form__second-title">
+				Billing Details
+			</h2>
+			<form action="https://jsonplaceholder.typicode.com/posts" class="components-form__form-components-info  form-components-info" method="POST">
+				<div class="form-components-info__row">
+					<div class="form-components-info__input">
+						<input type="text" required name="first-name" placeholder="First name*">
+					</div>
+					<div class="form-components-info__input">
+						<input type="text" required name="last-name" placeholder="Last name*">
+					</div>
+				</div>
+				<div class="form-components-info__row">
+					<div class="form-components-info__input">
+						<input type="text" required name="address" placeholder="Address*" autocomplete="off">
+					</div>
+					<div class="form-components-info__input">
+						<input type="text" name="address2" placeholder="Address line 2" autocomplete="off">
+					</div>
+				</div>
+				<div class="form-components-info__row">
+					<div class="form-components-info__input form-components-info__input--select">
+						<select name="country01" required>
+							<option value="" class="form-components-info__option-placeholder" selected>Country*</option>
+							<option value="Country1" class="form-components-info__option-country">Country 1</option>
+							<option value="Country2" class="form-components-info__option-country">Country 2</option>
+							<option value="Country3" class="form-components-info__option-country">Country 3</option>
+							<option value="Country4" class="form-components-info__option-country">Country 4</option>
+						</select>
+					</div>
+					<div class="form-components-info__input">
+						<input type="text" name="city" placeholder="City/Town*" autocomplete="off">
+					</div>
+				</div>
+				<div class="form-components-info__row">
+					<div class="form-components-info__input">
+						<input type="text" required name="postcode1" placeholder="Postcode / ZIP*" autocomplete="off">
+					</div>
+					<div class="form-components-info__input">
+						<input type="tel" name="phone1" placeholder="Phone*">
+					</div>
+				</div>
+				<div class="form-components-info__row">
+					<div class="form-components-info__input">
+						<input type="text" required name="postcode2" placeholder="Postcode / ZIP*" autocomplete="off">
+					</div>
+					<div class="form-components-info__input">
+						<input type="tel" name="phone2" placeholder="Phone*">
+					</div>
+				</div>
+				<div class="form-components-info__textarea-box">
+					<textarea name="additional-information" class="form-components-info__textarea" placeholder="Additional information"></textarea>
+				</div>
+				<div class="form-components-info__check-box-create-account">
+					<input type="checkbox" name="create-account" id="create-account" checked>
+					<label for="create-account">Create Account</label>
+				</div>
+				<div class="form-components-info__check-box-different-address">
+					<input type="checkbox" name="ship-to-a-different-address" id="ship-to-a-different-address">
+					<label for="ship-to-a-different-address">Ship to a different address?</label>
+				</div>
+			</form>
+			<h3 class="components-form__third-title">
+				Apply Coupon to get discount!
+			</h3>
+			<form action="#" class="components-form__form-coupon-code form-coupon-code">
+				<div class="form-coupon-code__input">
+					<input type="text" required name="coupon-code" placeholder="Coupon code">
+				</div>
+				<button class="form-coupon-code__button" type="submit">
+					Apply Code
+				</button>
+			</form>
+		</div>
+	</div>
+	<div class="ecommerce-form">
+		<div class="ecommerce-form__container">
+			<h2 class="ecommerce-form__title">
+				Shipping Address
+			</h2>
+			<form action="#" class="ecommerce-form__login-form login-form">
+				<div class="login-form__row">
+					<label for="login-form__input--email" class="login-form__label">
+						Email Address 
+						<span>*</span>
+					</label>
+					<div class="login-form__input-box">
+						<input type="email" name="email" class="login-form__input" id="login-form__input--email" placeholder="roni_cost@example.com" required>
+						<div class="login-form__psevdo-element"></div>
+					</div>
+				</div>
+				<div class="login-form__row">
+					<label for="login-form__input--password" class="login-form__label">
+						Password
+					</label>
+					<div class="login-form__input-box">
+						<input type="password" name="password" class="login-form__input login-form__input--password" id="login-form__input--password" placeholder="******************" required>
+						<div class="login-form__psevdo-element"></div>
+					</div>
+				</div>
+				<div class="login-form__row">
+					<label for="login-form__input--postal-code" class="login-form__label">
+						Zip/Postal Code
+					</label>
+					<div class="login-form__input-box">
+						<input type="text" name="postal-code" class="login-form__input" id="login-form__input--postal-code">
+						<div class="login-form__psevdo-element"></div>
+					</div>
+				</div>
+				<p>
+					You already have an account with us. Sign in or continue as guest.
+				</p>
+				<div class="login-form__button-row">
+					<button class="login-form__button" type="submit">
+						LOGIN
+					</button>
+					<a href="#" class="login-form__forgot-password-button">
+						Forgot Your Password?
+					</a>
+				</div>
+			</form>
+			<form action="#" class="ecommerce-form__order-form order-form">
+				<div class="order-form__row">
+					<label for="order-form__input--first-name" class="order-form__label">
+						First Name 
+						<span>*</span>
+					</label>
+					<div class="login-form__input-box">
+						<input type="text" name="order-form__first-name" class="order-form__input" id="order-form__input--first-name" required>
+						<div class="order-form__psevdo-element"></div>
+					</div>
+				</div>
+				<div class="order-form__row">
+					<label for="order-form__input--first-name" class="order-form__label">
+						Last Name
+						<span>*</span>
+					</label>
+					<div class="login-form__input-box">
+						<input type="text" name="order-form__last-name" class="order-form__input" id="order-form__input--last-name" required>
+						<div class="order-form__psevdo-element"></div>
+					</div>
+				</div>
+				<div class="order-form__row">
+					<label for="order-form__input--company" class="order-form__label">
+						Company
+					</label>
+					<div class="login-form__input-box">
+						<input type="text" name="order-form__company" class="order-form__input" id="order-form__input--company">
+						<div class="order-form__psevdo-element"></div>
+					</div>
+				</div>
+				<div class="order-form__row">
+					<label for="" class="order-form__label">
+						Street Address 
+						<span>*</span>
+					</label>
+					<div class="login-form__address-inputs">
+						<div class="login-form__input-box">
+							<input type="text" name="order-form__address-1" class="order-form__input" id="order-form__input--address-1" required>
+							<div class="order-form__psevdo-element"></div>
+						</div>
+						<div class="login-form__input-box">
+							<input type="text" name="order-form__address-2" class="order-form__input" id="order-form__input--address-2" required>
+							<div class="order-form__psevdo-element"></div>
+						</div>
+						<div class="login-form__input-box">
+							<input type="text" name="order-form__address-3" class="order-form__input" id="order-form__input--address-3" required>
+							<div class="order-form__psevdo-element"></div>
+						</div>
+					</div>
+				</div>
+				<div class="order-form__row">
+					<label for="order-form__input--country" class="order-form__label">
+						Country 
+						<span>*</span>
+					</label>
+					<div class="login-form__input-box">
+						<input type="text" name="order-form__country" class="order-form__input" id="order-form__input--country" required>
+						<div class="order-form__psevdo-element"></div>
+					</div>
+				</div>
+				<div class="order-form__row">
+					<label for="order-form__input--state-province" class="order-form__label">
+						State/Province 
+						<span>*</span>
+					</label>
+					<div class="login-form__input-box">
+						<input type="text" name="order-form__state-province" class="order-form__input" id="order-form__input--state-province" required>
+						<div class="order-form__psevdo-element"></div>
+					</div>
+				</div>
+				<h2 class="order-form__title">
+					Shipping Methods
+				</h2>
+				<div class="order-form__radio-boxes">
+					<div class="order-form__radio-box">
+						<input type="radio" class="order-form__radio" checked id="order-form__radio-1" name="order-form__radio">
+						<label for="order-form__radio-1" class="order-form__radio-label">
+								<span>$5.00</span>
+								<span>Fixed</span>
+								<span>Flat Rate</span>
+						</label>
+					</div>
+					<div class="order-form__radio-box">
+						<input type="radio" class="order-form__radio" id="order-form__radio-2" name="order-form__radio">
+						<label for="order-form__radio-2" class="order-form__radio-label">
+								<span>$10.00</span>
+								<span>Table Rate</span>
+								<span>Best Way</span>
+						</label>
+					</div>
+				</div>
+				<div class="order-form__button-box">
+					<button class="order-form__submit-button" type="submit">NEXT</button>
+					<a href="#" class="order-form__back-button">BACK</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
