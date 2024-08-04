@@ -1,0 +1,101 @@
+body {
+   background-color: #b5a789;
+   font-family: Georgia, "Times New Roman", Times, serif;
+   font-size: small;
+   margin: 0px;
+}
+#allcontent {
+   /* width: 800px; */
+   padding: 5px 0;
+   /* margin: 0 auto; */
+   /* background-color: #675c47; */
+   position: relative;
+}
+#header {
+   background: #675c47 url(header_background.gif);
+   margin: 10px 10px 0 10px;
+   height: 108px;
+   color: #F3F3EB;
+   line-height: 1.8;
+}
+#header p{
+   float: right;
+   text-align: right;
+   padding-right: 30px;
+   letter-spacing: 2px;
+}
+#award {
+   position: absolute;
+   top: 25px;
+   left: 35%;
+}
+#coupon {
+   position: fixed;
+   top: 350px;
+   left: -90px;
+}
+#coupon a, img {
+   border: none;
+}
+#coupon img {
+   width: 300px;
+}
+#tableContainer {
+   display: table;
+   border-spacing: 10px;
+}
+#tableRow {
+   display: table-row;
+}
+#drinks {
+   display: table-cell;
+   vertical-align: top;
+   background: #efe5d0 url(sidebar_background.gif);
+   width: 20%;
+   padding: 15px;
+}
+#main {
+   background-color: #efe5d0;
+   font-size: 105%;
+   padding: 15px;
+   display: table-cell;
+   vertical-align: top;
+}
+#sidebar {
+   background: #efe5d0 url(sidebar_background.gif);
+   font-size: 105%;
+   padding: 15px;
+   width: 280px;
+   display: table-cell;
+   vertical-align: top;
+}
+#footer {
+   background-color: #675c47;
+   color: #efe5d0;
+   text-align: center;
+   padding: 15px;
+   margin: 0 10px 10px 10px;
+   font-size: 90%;
+   clear: right;
+}
+h1 {
+   font-size: 120%;
+   color: #954b4b;
+}
+.slogan {
+   color: #954b4b;
+}
+.beanheading {
+   text-align: center;
+   line-height: 1.8em;
+}
+a:link {
+   color: #b76666;
+   text-decoration: none;
+   border-bottom: thin dotted #b76666;
+}
+a:visited {
+   color: #675c47;
+   text-decoration: none;
+   border-bottom: thin dotted #675c47;
+}
