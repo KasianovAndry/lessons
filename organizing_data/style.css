@@ -1,0 +1,56 @@
+body {
+   font-family: Verdana, Geneva, Arial,  sans-serif;
+   font-size: small;
+}
+h1, h2 {
+   color: #cc6600;
+   border-bottom: thin dotted #888;
+}
+h1 {
+   font-family: "Emblema One", sans-serif;
+   font-size: 220%;
+}
+h2 {
+   font-size: 130%;
+   font-weight: normal;
+}
+blockquote {
+   font-style: italic;
+}
+.post_image {
+   width: 500px;
+}
+table {
+   margin: 0 20px;
+   border: thin solid black;
+   caption-side: bottom;
+   border-collapse: collapse;
+}
+td, th {
+   border: thin solidotted gray;
+   padding: 5px;
+}
+th {
+   background-color: #cc6600;
+}
+table table th {
+   background-color: white;
+}
+.cellcolor {
+   background-color: #fcba7a;
+}
+.center {
+   text-align: center;
+}
+.right {
+   text-align: right;
+}
+caption {
+   font-style: italic;
+   padding-top: 8px;
+}
+li {
+   list-style-image: url(bag-icon.png);
+   padding-top: 5px;
+   margin-left: 20px;
+}
